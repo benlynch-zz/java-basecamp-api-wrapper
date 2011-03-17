@@ -27,7 +27,9 @@ Please visit the project page on Github to report any issues or ideas
 
 https://github.com/jondavidjohn/java-basecamp-api-wrapper
 
-Thanks,
+I would also love to hear about any projects that end up utilizing this library!
 
+Thanks,
+me@jondavidjohn.com
 http://www.jondavidjohn.com
 
