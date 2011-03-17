@@ -1,4 +1,4 @@
-Goal:  Produce all functionality offered by the BaseCamp RESTful API through a Object Oriented Java Wrapper.
+Goal:  Produce all functionality offered by the BaseCamp RESTful API through an Object Oriented Java Wrapper.
 
 Progress
 ==============
