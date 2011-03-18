@@ -7,8 +7,8 @@ Progress
 √ Projects
 √ People
 √ Companies
-  Categories
-  Messages
+√ Categories
+√ Messages
   Comments
   To-Do Lists/Items
   Milestones
