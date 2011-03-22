@@ -9,7 +9,7 @@ Progress
 √ Companies
 √ Categories
 √ Messages
-  Comments
+√ Comments
   To-Do Lists/Items
   Milestones
 √ Time Tracking
