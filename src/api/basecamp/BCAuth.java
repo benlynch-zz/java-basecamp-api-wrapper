@@ -1,5 +1,12 @@
 package api.basecamp;
 
+/***
+ * 
+ * Object used to Authenticate with BaseCamp
+ * 
+ * @author jon
+ *
+ */
 public class BCAuth {
 
 	public String 	username;

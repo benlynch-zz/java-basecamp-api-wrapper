@@ -1,7 +1,7 @@
 Goal:  Produce all functionality offered by the BaseCamp RESTful API through an Object Oriented Java Wrapper.
 
 Progress
-==============
+===============
 
 √ Account
 √ Projects
@@ -11,10 +11,13 @@ Progress
 √ Messages
 √ Comments
   To-Do Lists/Items
-  Milestones
+√ Milestones *
 √ Time Tracking
-  Files
-  
+  Files (Attachments in General)
+
+* Cannot Batch Create or adjust upcoming deadlines based on Milestone update
+
+===============
   
 See JavaDoc for specific documentation
 

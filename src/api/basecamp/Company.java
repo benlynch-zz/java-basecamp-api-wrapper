@@ -1,6 +1,7 @@
 package api.basecamp;
 
 import org.w3c.dom.Element;
+
 /***
  * Company Object for use with BaseCamp API
  * 

@@ -13,8 +13,6 @@ import org.w3c.dom.Element;
 
 import sun.misc.BASE64Encoder;
 
-
-
 /***
  * Base for building out BaseCamp Entities
  * 
