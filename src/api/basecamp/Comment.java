@@ -130,19 +130,14 @@ public class Comment extends BaseCampEntity{
 		return super.delete("/comments/"+this.id+".xml");
 		
 	}
+	
+	//--- Getters
 
 	/**
 	 * @return the body
 	 */
 	public String getBody() {
 		return body;
-	}
-
-	/**
-	 * @param body the body to set
-	 */
-	public void setBody(String body) {
-		this.body = body;
 	}
 
 	/**
@@ -192,6 +187,15 @@ public class Comment extends BaseCampEntity{
 	 */
 	public int getAttachmentCount() {
 		return attachmentCount;
+	}
+	
+	//--- Setters
+	
+	/**
+	 * @param body the body to set
+	 */
+	public void setBody(String body) {
+		this.body = body;
 	}
 	
 }

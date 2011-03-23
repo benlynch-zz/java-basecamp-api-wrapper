@@ -173,61 +173,102 @@ public class TimeEntry extends BaseCampEntity{
 		
 		return request;
 	}
-	
-	//--- Getters
 
+	//--- Getters
+	
+	/**
+	 * @return the id
+	 */
 	public int getId() {
 		return id;
 	}
 
+	/**
+	 * @return the projectId
+	 */
 	public int getProjectId() {
 		return projectId;
 	}
 
+	/**
+	 * @return the personId
+	 */
 	public int getPersonId() {
 		return personId;
 	}
 
+	/**
+	 * @return the toDoItemId
+	 */
 	public int getToDoItemId() {
 		return toDoItemId;
 	}
 
+	/**
+	 * @return the hours
+	 */
 	public double getHours() {
 		return hours;
 	}
 
+	/**
+	 * @return the description
+	 */
 	public String getDescription() {
 		return description;
 	}
 
-	public Calendar getCalendar() {
+	/**
+	 * @return the date
+	 */
+	public Calendar getDate() {
 		return date;
 	}
 	
 	//--- Setters
-	
+
+	/**
+	 * @param projectId the projectId to set
+	 */
 	public void setProjectId(int projectId) {
 		this.projectId = projectId;
 	}
 
+	/**
+	 * @param personId the personId to set
+	 */
 	public void setPersonId(int personId) {
 		this.personId = personId;
 	}
 
+	/**
+	 * @param toDoItemId the toDoItemId to set
+	 */
 	public void setToDoItemId(int toDoItemId) {
 		this.toDoItemId = toDoItemId;
 	}
 
+	/**
+	 * @param hours the hours to set
+	 */
 	public void setHours(double hours) {
 		this.hours = hours;
 	}
 
+	/**
+	 * @param description the description to set
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
-	public void setCalendar(Calendar date) {
+	/**
+	 * @param date the date to set
+	 */
+	public void setDate(Calendar date) {
 		this.date = date;
 	}
+	
+
 
 }

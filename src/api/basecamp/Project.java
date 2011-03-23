@@ -113,39 +113,57 @@ public class Project extends BaseCampEntity {
 	}
 	
 	//--- Getters
-	
+
+	/**
+	 * @return the id
+	 */
 	public int getId() {
 		return id;
 	}
 
-
+	/**
+	 * @return the name
+	 */
 	public String getName() {
 		return name;
 	}
 
-
+	/**
+	 * @return the createdOn
+	 */
 	public Calendar getCreatedOn() {
 		return createdOn;
 	}
 
-
+	/**
+	 * @return the status
+	 */
 	public String getStatus() {
 		return status;
 	}
 
-
+	/**
+	 * @return the lastChangedOn
+	 */
 	public Calendar getLastChangedOn() {
 		return lastChangedOn;
 	}
 
-
+	/**
+	 * @return the companyId
+	 */
 	public int getCompanyId() {
 		return companyId;
 	}
 
-
+	/**
+	 * @return the companyName
+	 */
 	public String getCompanyName() {
 		return companyName;
 	}
+	
+	
+
 
 }

@@ -6,6 +6,13 @@ import java.util.List;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+/***
+ * 
+ * Collection of BaseCamp Category Objects
+ * 
+ * @author jondavidjohn
+ *
+ */
 public class Categories extends BaseCampEntity{
 
 	private List<Category> items = new ArrayList<Category>();
@@ -58,15 +65,25 @@ public class Categories extends BaseCampEntity{
 		}
 	}
 	
+	/**
+	 * @return Count of Category Objects
+	 */
 	public int getCategoryCount() {
 		return this.categoryCount;
 	}
-
+	
+	/**
+	 * @return List of Project Objects
+	 */
 	public List<Category> getCategories() {
 		return this.items;
 	}
 	
-	public Category getCompany(int id) {
-		return this.items.get(id);
+	/**
+	 * @param	index	index of Category Object
+	 * @return List of Category Objects
+	 */
+	public Category getCategory(int index) {
+		return this.items.get(index);
 	}
 }

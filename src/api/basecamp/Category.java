@@ -130,40 +130,57 @@ public class Category extends BaseCampEntity{
 		return super.delete("/categories/"+this.id+".xml");
 		
 	}
+
+	//--- Getters
 	
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @return the projectId
+	 */
+	public int getProjectId() {
+		return projectId;
+	}
+
+	/**
+	 * @return the itemCount
+	 */
+	public int getItemCount() {
+		return itemCount;
+	}
+
+	/**
+	 * @return the type
+	 */
+	public boolean isType() {
+		return type;
+	}
 	
-	/***
-	 * 
-	 * Update field and will update BC upon `.save()`
-	 * 
-	 * @param name	New Name of Category
+	//--- Setters
+
+	/**
+	 * @param name the name to set
 	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 	
-	//--- Getters
+	
 
-	public String getName() {
-		return name;
-	}
-
-
-	public int getId() {
-		return id;
-	}
-
-	public int getProjectId() {
-		return projectId;
-	}
-
-	public int getItemCount() {
-		return itemCount;
-	}
-
-	public boolean isType() {
-		return type;
-	}
+	
+	
 	
 	
 }

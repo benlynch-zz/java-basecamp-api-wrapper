@@ -59,55 +59,89 @@ public class Account extends BaseCampEntity {
 		this.subscription = new Subscription(subscriptionElement);
 		
 	}
-	
-	//--- Getters
-		
 
+	//--- Getters
+
+	/**
+	 * @return the createdAt
+	 */
 	public Calendar getCreatedAt() {
 		return createdAt;
 	}
 
+	/**
+	 * @return the id
+	 */
 	public int getId() {
 		return id;
 	}
 
+	/**
+	 * @return the updatedAt
+	 */
 	public Calendar getUpdatedAt() {
 		return updatedAt;
 	}
 
+	/**
+	 * @return the companyName
+	 */
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	/**
+	 * @return the accountHolderId
+	 */
 	public int getAccountHolderId() {
 		return accountHolderId;
 	}
 
+	/**
+	 * @return the isSsl
+	 */
 	public boolean isSsl() {
 		return isSsl;
 	}
 
+	/**
+	 * @return the isTimeTracking
+	 */
+	public boolean isTimeTracking() {
+		return isTimeTracking;
+	}
+
+	/**
+	 * @return the isEmailNotify
+	 */
 	public boolean isEmailNotify() {
 		return isEmailNotify;
 	}
 
+	/**
+	 * @return the storage
+	 */
 	public int getStorage() {
 		return storage;
 	}
 
+	/**
+	 * @return the primaryCompanyId
+	 */
 	public int getPrimaryCompanyId() {
 		return primaryCompanyId;
 	}
 
+	/**
+	 * @return the subscription
+	 */
 	public Subscription getSubscription() {
 		return subscription;
 	}
 
-	public String getCompanyName() {
-		return this.companyName;
-	}
-	
-	public boolean isTimeTracking() {
-		return this.isTimeTracking;
-	}
-		
-	
+
+
+
 	//--- Subscription Class
 	public class Subscription {
 		
@@ -136,28 +170,50 @@ public class Account extends BaseCampEntity {
 			
 		}
 		
+		//--- Getters
+
+		/**
+		 * @return the isTimeTracking
+		 */
 		public boolean isTimeTracking() {
-			return this.isTimeTracking;
+			return isTimeTracking;
 		}
-		
-		public long getStorageMax() {
-			return this.storage;
+
+		/**
+		 * @return the storage
+		 */
+		public long getStorage() {
+			return storage;
 		}
-		
+
+		/**
+		 * @return the name
+		 */
 		public String getName() {
-			return this.name;
+			return name;
 		}
-		
+
+		/**
+		 * @return the isSsl
+		 */
 		public boolean isSsl() {
-			return this.isSsl;
+			return isSsl;
+		}
+
+		/**
+		 * @return the writeboards
+		 */
+		public String getWriteboards() {
+			return writeboards;
+		}
+
+		/**
+		 * @return the projects
+		 */
+		public int getProjects() {
+			return projects;
 		}
 		
-		public String writeboardsMax() {
-			return this.writeboards;
-		}
-		
-		public int getProjectsMax() {
-			return this.projects;
-		}
+
 	}
 }

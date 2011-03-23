@@ -40,18 +40,31 @@ public class Projects extends BaseCampEntity{
 		
 	}
 	
+	/**
+	 * @return List of Project Objects
+	 */
 	public List<Project> getProjects() {
 		return this.items;
 	}
 	
-	public Project getProject(int id) {
-		return this.items.get(id);
+	/**
+	 * @param 	index	index of project
+	 * @return	Project according to index
+	 */
+	public Project getProject(int index) {
+		return this.items.get(index);
 	}
 	
+	/**
+	 * @return	Count of Projects
+	 */
 	public int getProjectCount() {
 		return this.projectCount;
 	}
 	
+	/**
+	 * @return List<Project> of all active projects
+	 */
 	public List<Project> getActive() {
 		
 		List<Project> returnList = new ArrayList<Project>();
@@ -67,6 +80,9 @@ public class Projects extends BaseCampEntity{
 		return returnList;
 	}
 	
+	/**
+	 * @return List<Project> of all projects that are on hold
+	 */
 	public List<Project> getOnHold() {
 		
 		List<Project> returnList = new ArrayList<Project>();
@@ -82,6 +98,9 @@ public class Projects extends BaseCampEntity{
 		return returnList;
 	}
 	
+	/**
+	 * @return List<Project> of all archived projects
+	 */
 	public List<Project> getArchived() {
 		
 		List<Project> returnList = new ArrayList<Project>();

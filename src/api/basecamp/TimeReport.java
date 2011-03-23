@@ -110,7 +110,7 @@ public class TimeReport extends BaseCampEntity {
 		
 		for (int i=0; i<this.entries.size(); i++) {
 			TimeEntry entry = this.entries.get(i);
-			Calendar entryCal = entry.getCalendar();
+			Calendar entryCal = entry.getDate();
 			
 			if ((start.equals(entryCal) || start.before(entryCal)) && 
 				(end.equals(entryCal) || end.after(entryCal))) {

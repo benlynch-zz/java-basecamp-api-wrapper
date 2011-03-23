@@ -63,14 +63,24 @@ public class Companies extends BaseCampEntity{
 		}
 	}
 	
+	/**
+	 * @return List of Category Objects
+	 */
 	public List<Company> getCompanies() {
 		return this.items;
 	}
 	
-	public Company getCompany(int id) {
-		return this.items.get(id);
+	/**
+	 * @param	index	index of Category Object
+	 * @return List of Category Objects
+	 */
+	public Company getCompany(int index) {
+		return this.items.get(index);
 	}
 	
+	/**
+	 * @return Count of Category Objects
+	 */
 	public int getCompanyCount() {
 		return this.companyCount;
 	}
