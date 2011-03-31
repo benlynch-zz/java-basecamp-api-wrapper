@@ -109,7 +109,8 @@ public class ElementValue {
 	 */
 	static boolean getBoolValue(Element ele, String tagName) {
 		//TODO Catch exception
-		return (ElementValue.getTextValue(ele, tagName) == "true");
+		
+		return (ElementValue.getTextValue(ele, tagName).compareTo("true") == 0);
 	}
 	
 	/***

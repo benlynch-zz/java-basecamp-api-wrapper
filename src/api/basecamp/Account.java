@@ -46,7 +46,7 @@ public class Account extends BaseCampEntity {
 		this.companyName 	  = ElementValue.getTextValue(accountElement, "name");
 		this.accountHolderId  = ElementValue.getIntValue(accountElement,  "account-holder-id");
 		this.isSsl 			  = ElementValue.getBoolValue(accountElement, "ssl-enabled");
-		this.isTimeTracking   = ElementValue.getBoolValue(accountElement, "time-tracking");
+		this.isTimeTracking   = ElementValue.getBoolValue(accountElement, "time-tracking-enabled");
 		this.isEmailNotify 	  = ElementValue.getBoolValue(accountElement, "email-notification-enabled");
 		this.storage 		  = ElementValue.getIntValue(accountElement,  "storage");
 		this.primaryCompanyId = ElementValue.getIntValue(accountElement,  "primary-company-id");
