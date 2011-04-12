@@ -35,7 +35,7 @@ public class Project extends BaseCampEntity {
 		
 		this.id				= ElementValue.getIntValue(projectElement,  "id");
 		this.name 			= ElementValue.getTextValue(projectElement, "name");
-		this.createdOn 		= ElementValue.getDateTimeValue(projectElement, "created-on");
+		this.createdOn 		= ElementValue.getDateValue(projectElement, "created-on");
 		this.status 		= ElementValue.getTextValue(projectElement, "status");
 		this.lastChangedOn 	= ElementValue.getDateTimeValue(projectElement, "last-changed-on");
 		
@@ -72,7 +72,7 @@ public class Project extends BaseCampEntity {
 		
 		this.id				= ElementValue.getIntValue(projectElement,  "id");
 		this.name 			= ElementValue.getTextValue(projectElement, "name");
-		this.createdOn 		= ElementValue.getDateTimeValue(projectElement, "created-on");
+		this.createdOn 		= ElementValue.getDateValue(projectElement, "created-on");
 		this.status 		= ElementValue.getTextValue(projectElement, "status");
 		this.lastChangedOn 	= ElementValue.getDateTimeValue(projectElement, "last-changed-on");
 		
@@ -99,7 +99,7 @@ public class Project extends BaseCampEntity {
 				
 		this.id				= ElementValue.getIntValue(projectElement,  "id");
 		this.name 			= ElementValue.getTextValue(projectElement, "name");
-		this.createdOn 		= ElementValue.getDateTimeValue(projectElement, "created-on");
+		this.createdOn 		= ElementValue.getDateValue(projectElement, "created-on");
 		this.status 		= ElementValue.getTextValue(projectElement, "status");
 		this.lastChangedOn 	= ElementValue.getDateTimeValue(projectElement, "last-changed-on");
 		

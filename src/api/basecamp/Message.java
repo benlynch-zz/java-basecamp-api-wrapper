@@ -118,16 +118,16 @@ public class Message extends BaseCampEntity {
 		request += "</request>";
 		
 		if (this.id == 0) {
-			
-			int newID = super.post("projects/"+this.projectId+"/posts/new.xml", request);
-			
-			this.reconstruct(super.get("/posts/"+newID+".xml"));
+		
+			int newID = super.post("/projects/"+this.projectId+"/posts.xml", request);
+
+			this.reconstruct(super.get("/projects/"+this.projectId+"/posts/"+newID+".xml"));
 			
 			return true;
 			
 		}
 		else {
-			return super.put("posts/"+this.id+".xml", request);
+			return super.put("/posts/"+this.id+".xml", request);
 		}
 	}
 	
@@ -151,7 +151,7 @@ public class Message extends BaseCampEntity {
 		
 		if (this.id == 0) {
 			
-			int newID = super.post("projects/"+this.projectId+"/posts/new.xml", request);
+			int newID = super.post("/projects/"+this.projectId+"/posts/new.xml", request);
 			
 			this.reconstruct(super.get("/posts/"+newID+".xml"));
 			
@@ -159,7 +159,7 @@ public class Message extends BaseCampEntity {
 			
 		}
 		else {
-			return super.put("posts/"+this.id+".xml", request);
+			return super.put("/posts/"+this.id+".xml", request);
 		}
 	}
 	

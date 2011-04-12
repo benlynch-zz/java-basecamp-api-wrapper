@@ -130,11 +130,9 @@ abstract class BaseCampEntity {
 	        int responseCode = Integer.parseInt(headerArray[1]);
 	        
 	        if (responseCode == 201) {
-	        	
 	        	String locationURL = connection.getHeaderField("Location");
 	        	String[] locationArray = locationURL.split("/");
-	        	itemID = Integer.parseInt(locationArray[locationArray.length - 1]);
-	        	
+	        	itemID = Integer.parseInt(locationArray[locationArray.length - 1].replace(".xml",""));
 	        }
 	        else {
 	        	
